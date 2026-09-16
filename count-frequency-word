@@ -1,6 +1,6 @@
 import string
 
-user_text = input("Введите текст: ")
+user_text = input("Enter the text: ")
 
 user_text = user_text.lower()
 for symbol in string.punctuation:
@@ -12,6 +12,6 @@ frequency_dict = {}
 for single_word in all_words:
     frequency_dict[single_word] = frequency_dict.get(single_word, 0) + 1
 
-print("\nЧастота слов:")
+print("\nFrequency of words:")
 for unique_word, total_amount in frequency_dict.items():
     print(f"{unique_word}: {total_amount}")
